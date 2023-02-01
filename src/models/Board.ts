@@ -1,4 +1,5 @@
 import { Cell } from "./cell"
+import { Figure } from "./figures/Figure"
 
 export class Board {
  cells: Cell[][] = []
@@ -8,9 +9,9 @@ export class Board {
         const row: Cell[] = []
         for (let j = 0; j < 8; j++) {
             if((i + j) % 2 !== 0 ) {
-                row.push(new Cell()) //Черные ячейки
+                row.push(new Cell(this, i, j, Colors.BLACK, figure: null)) //Черные ячейки
             } else {
-                row.push(new Cell()) //Белые ячейки
+                row.push(new Cell(this, i, j, Colors.WHITE, figure: null)) //Белые ячейки
             }
         }
         this.cells.push(row);
