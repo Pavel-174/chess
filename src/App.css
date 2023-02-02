@@ -40,3 +40,18 @@
 .white {
   background-color: lightgreen;
 }
+
+.selected {
+  background-color: gray;
+}
+
+.available  {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rebeccapurple;
+}
+
+.cell_available {
+  background-color: red;
+}
