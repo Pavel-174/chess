@@ -11,5 +11,5 @@ export class Knight extends Figure {
         this.logo = color === Colors.BLACK ? blackLogo : whiteLogo;
         this.name = FigureNames.KNIGHT;
     }
-
+    
 }
